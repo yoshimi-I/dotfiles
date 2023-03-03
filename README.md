@@ -25,7 +25,7 @@ This repository contains scripts to set macOS.
 Download installation materials.
 
 ```shell
-$ cd ~ && git clone https://github.com/yoshimi/dotfiles
+$ cd ~ && git clone https://github.com/yoshimi-I/dotfiles
 ```
 
 Set macOS.
