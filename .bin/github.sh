@@ -2,9 +2,15 @@
 
 # GitHub SSH Setup
 echo -e "\033[0;34m- GitHub SSH Setup...\033[0m"
+echo "Create SSH key"
 SSH_KEY_PATH="$HOME/.ssh"
+if [ ! -d "$SSH_KEY_PATH" ]; then
+    mkdir "$SSH_KEY_PATH"
+fi
+# create SSH key
 ssh-keygen -N '' -f ${SSH_KEY_PATH}/id_rsa
 pbcopy < ${SSH_KEY_PATH}/id_rsa.pub
-echo "SSH key copied to clipboard. Paste it into GitHub."
-sleep 1; echo "Open the GitHub settings page:"
-sleep 1; open https://github.com/settings/ssh/new
+
+# GitHub login
+echo "GitHub Login."
+gh auth login -w
