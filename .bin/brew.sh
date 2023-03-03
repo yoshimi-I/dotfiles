@@ -6,13 +6,8 @@ if [ "$(uname)" != "Darwin" ] ; then
 	exit 1
 fi
 
-function open_app_store {
-  echo "Please login with your Apple ID"
-  sleep 1; echo "Open the App Store."
-  sleep 1; open -a App\ Store
-}
-
 function login_check {
+  sleep 1; echo "Open the App Store." && open -a App\ Store
   while true; do
     echo -n "$* [Y/n]: (default: n) "
     read ANS
@@ -27,7 +22,6 @@ function login_check {
   done
 }
 
-open_app_store
 if login_check "Did you login?"; then
   brew bundle --global
 fi
