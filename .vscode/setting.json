@@ -39,7 +39,6 @@
   "python.linting.flake8Args": [
     "--ignore=E501"
   ],
-  "terminal.integrated.defaultLocation": "editor",
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
   "[ruby]": {
     "editor.tabSize": 2,
