@@ -14,6 +14,7 @@ brew "shellcheck"
 brew "tree"
 brew "volta"
 brew "wget"
+brew "gh"
 
 cask "intellij-idea"
 cask "goland"
