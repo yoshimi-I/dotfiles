@@ -34,17 +34,6 @@ Set macOS.
 $ cd ~/dotfiles && make
 ```
 
-Set alfred.
-
-
-```
-1. Register Powerpack with Alfred.
-2. Press "command + ," on alfred.
-3. Click "Advanced" tab.
-4. Click "Set preferences folder…" button.
-5. Choose "~/dotfiles/alfred/Alfred.alfredpreferences".
-6. Click "Set folder and restart Alfred" button.
-```
 
 Set iterm2.
 
