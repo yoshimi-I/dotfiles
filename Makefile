@@ -1,5 +1,5 @@
 # Run all shell files
-
+all: init link defaults brew
 
 # next create symbolic links
 link:
