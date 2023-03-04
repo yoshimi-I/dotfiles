@@ -1,5 +1,5 @@
 # Run all shell files
-all:link init make_path brew github
+all:link init brew github
 
 
 # create symbolic links
@@ -13,10 +13,6 @@ init:
 	@echo "\033[0;34mRun init.sh\033[0m"
 	@.bin/init.sh
 	@echo "\033[0;34mDone.\033[0m"
-make_path:
-	@echo "\033[0;34mRun make_path.sh\033[0m"
-	@.bin/make_path.sh
-	@echo "\033[0;32mDone.\033[0m"
 
 # Install macOS applications.
 brew:
