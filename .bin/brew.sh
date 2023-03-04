@@ -23,5 +23,6 @@ function login_check {
 }
 
 if login_check "Did you login?"; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
   brew bundle --global
 fi
