@@ -12,5 +12,9 @@ ssh-keygen -N '' -f ${SSH_KEY_PATH}/id_rsa
 pbcopy < ${SSH_KEY_PATH}/id_rsa.pub
 
 # GitHub login
-echo "GitHub Login."
+echo -e "\033[0;34m- GitHub login start...\033[0m"
+echo "First you need to choice SSH"
+echo "Second you need to choice id_rsa.pub"
+
+
 gh auth login -w
