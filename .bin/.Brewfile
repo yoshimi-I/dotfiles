@@ -35,6 +35,7 @@ cask "visual-studio-code"
 cask "warp"
 cask "zoom"
 cask "alfred"
+cask "iterm2"
 
 mas "LINE", id: 539883307
 mas "Microsoft Excel", id: 462058435
