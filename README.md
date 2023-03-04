@@ -27,7 +27,10 @@ Download installation materials.
 ```shell
 $ cd ~ && git clone https://github.com/yoshimi-I/dotfiles
 ```
-
+Authorization all shell files
+```shell
+chmod +x ./* && chmod +x ./.bin/* 
+```
 Set macOS.
 
 ```shell
