@@ -3,8 +3,7 @@
 # Install brew
 /bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 if [ "$(uname -m)" = "arm64" ] ; then
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-  source ~/.zshrc
+  (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/${USER}/.zprofile && eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 # Install xcode
