@@ -1,5 +1,5 @@
 # Run all shell files
-all: init link defaults brew
+all:link init brew github
 # run init.sh
 init:
 	@echo "\033[0;34mRun init.sh\033[0m"
