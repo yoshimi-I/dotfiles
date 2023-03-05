@@ -4,7 +4,7 @@
 
 # dotfiles
 
-**My personal dotfiles for OS X**
+**Welcome my personal dotfiles!!**
 
 </samp>
 
