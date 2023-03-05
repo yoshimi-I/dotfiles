@@ -4,7 +4,7 @@
 
 # dotfiles
 
-**Welcome my personal dotfiles!!**
+**Welcome to my personal dotfiles!!**
 
 </samp>
 
