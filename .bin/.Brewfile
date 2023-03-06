@@ -15,6 +15,7 @@ brew "tree"
 brew "volta"
 brew "wget"
 brew "gh"
+brew "starship
 
 cask "intellij-idea"
 cask "goland"
