@@ -60,5 +60,17 @@ PROMPT='
 %F{yellow}$%f '
 
 
-eval "$(direnv hook zsh)"
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+typeset -U path PATH
+path=(
+  /opt/homebrew/bin(N-/)
+  /opt/homebrew/sbin(N-/)
+  /usr/bin
+  /usr/sbin
+  /bin
+  /sbin
+  /usr/local/bin(N-/)
+  /usr/local/sbin(N-/)
+  /Library/Apple/usr/bin
+)
+
+eval "$(starship init zsh)"
