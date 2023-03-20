@@ -18,3 +18,4 @@ echo "Second you need to choice id_rsa.pub"
 
 
 gh auth login -w
+source ~/.zshrc

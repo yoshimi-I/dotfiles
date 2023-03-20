@@ -27,3 +27,4 @@ if login_check "Did you login?"; then
   source ~/.zshrc
   brew bundle --global
 fi
+source ~/.zshrc

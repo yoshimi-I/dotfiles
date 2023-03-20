@@ -10,3 +10,5 @@ for dotfile in "${SCRIPT_DIR}"/.??* ; do
 
     ln -fnsv "$dotfile" "$HOME"
 done
+
+source ~/.zshrc
