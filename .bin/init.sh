@@ -32,4 +32,5 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Rosetta 2 has been installed successfully."
+source ~/.zshrc
 exit 0
