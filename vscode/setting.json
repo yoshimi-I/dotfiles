@@ -1,65 +1,67 @@
 {
-    "editor.acceptSuggestionOnEnter": "on",
-  "editor.copyWithSyntaxHighlighting": false,
-  "editor.dragAndDrop": false,
-  "editor.fontSize": 12,
-  "editor.formatOnSave": false,
-  "editor.snippetSuggestions": "top",
-  "editor.suggest.showMethods": true,
-  "editor.suggest.preview": true,
-  "editor.suggestSelection": "first",
+  "editor.acceptSuggestionOnEnter": "on",
+"editor.copyWithSyntaxHighlighting": false,
+"editor.dragAndDrop": false,
+"editor.fontSize": 12,
+"editor.formatOnSave": false,
+"editor.snippetSuggestions": "top",
+"editor.suggest.showMethods": true,
+"editor.suggest.preview": true,
+"editor.suggestSelection": "first",
+"editor.tabSize": 2,
+"emmet.triggerExpansionOnTab": true,
+"editor.wordWrap": "on",
+"emmet.includeLanguages": {
+  "erb": "html"
+},
+"emmet.variables": {
+  "lang": "ja"
+},
+"files.insertFinalNewline": true,
+"files.trimFinalNewlines": true,
+"files.trimTrailingWhitespace": true,
+"[markdown]": {
+  "files.trimTrailingWhitespace": false
+},
+"files.associations": {
+  "*.erb": "erb"
+},
+"files.exclude": {
+  "**/.git": true,
+  "**/.svn": true,
+  "**/.hg": true,
+  "**/CVS": true,
+  "**/.DS_Store": true
+},
+"files.eol": "\n",
+"files.autoGuessEncoding": true,
+"python.linting.flake8Enabled": true,
+"python.linting.flake8Args": [
+  "--ignore=E501"
+],
+"window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+"[ruby]": {
   "editor.tabSize": 2,
-  "emmet.triggerExpansionOnTab": true,
-  "editor.wordWrap": "on",
-  "emmet.includeLanguages": {
-    "erb": "html"
-  },
-  "emmet.variables": {
-    "lang": "ja"
-  },
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
-  "[markdown]": {
-    "files.trimTrailingWhitespace": false
-  },
-  "files.associations": {
-    "*.erb": "erb"
-  },
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true
-  },
-  "files.eol": "\n",
-  "files.autoGuessEncoding": true,
-  "python.linting.flake8Enabled": true,
-  "python.linting.flake8Args": [
-    "--ignore=E501"
-  ],
-  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
-  "[ruby]": {
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
-  },
+  "editor.insertSpaces": true
+},
 
-  "[javascript]": {
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
+"[javascript]": {
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true
+},
+"[typescript]": {
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true
+},
+  "techtrain-railway.optOutTelemetry": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": 1,
+  "files.autoSave": "afterDelay",
+  "terminal.integrated.inheritEnv": false,
+  "[python]": {
+      "editor.formatOnType": true
   },
-  "[typescript]": {
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
-  },
-    "techtrain-railway.optOutTelemetry": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "window.zoomLevel": 1,
-    "workbench.colorTheme": "Monokai",
-    "files.autoSave": "afterDelay",
-    "terminal.integrated.inheritEnv": false,
-    "[python]": {
-        "editor.formatOnType": true
-    }
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "editor.inlineSuggest.enabled": true,
+  "workbench.activityBar.visible": false
 }
