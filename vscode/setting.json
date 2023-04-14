@@ -63,5 +63,5 @@
   },
   "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
   "editor.inlineSuggest.enabled": true,
-  "workbench.activityBar.visible": false
+  "workbench.activityBar.visible": true
 }
