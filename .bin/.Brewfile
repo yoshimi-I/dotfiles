@@ -38,6 +38,7 @@ cask "zoom"
 cask "alfred"
 cask "iterm2"
 cask "dbeaver-community"
+cask "fig"
 
 mas "LINE", id: 539883307
 mas "Microsoft Excel", id: 462058435
