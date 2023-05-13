@@ -1,67 +1,71 @@
 {
-  "editor.acceptSuggestionOnEnter": "on",
-"editor.copyWithSyntaxHighlighting": false,
-"editor.dragAndDrop": false,
-"editor.fontSize": 12,
-"editor.formatOnSave": false,
-"editor.snippetSuggestions": "top",
-"editor.suggest.showMethods": true,
-"editor.suggest.preview": true,
-"editor.suggestSelection": "first",
-"editor.tabSize": 2,
-"emmet.triggerExpansionOnTab": true,
-"editor.wordWrap": "on",
-"emmet.includeLanguages": {
-  "erb": "html"
-},
-"emmet.variables": {
-  "lang": "ja"
-},
-"files.insertFinalNewline": true,
-"files.trimFinalNewlines": true,
-"files.trimTrailingWhitespace": true,
-"[markdown]": {
-  "files.trimTrailingWhitespace": false
-},
-"files.associations": {
-  "*.erb": "erb"
-},
-"files.exclude": {
-  "**/.git": true,
-  "**/.svn": true,
-  "**/.hg": true,
-  "**/CVS": true,
-  "**/.DS_Store": true
-},
-"files.eol": "\n",
-"files.autoGuessEncoding": true,
-"python.linting.flake8Enabled": true,
-"python.linting.flake8Args": [
-  "--ignore=E501"
-],
-"window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
-"[ruby]": {
-  "editor.tabSize": 2,
-  "editor.insertSpaces": true
-},
-
-"[javascript]": {
-  "editor.tabSize": 2,
-  "editor.insertSpaces": true
-},
-"[typescript]": {
-  "editor.tabSize": 2,
-  "editor.insertSpaces": true
-},
-  "techtrain-railway.optOutTelemetry": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "window.zoomLevel": 1,
-  "files.autoSave": "afterDelay",
-  "terminal.integrated.inheritEnv": false,
-  "[python]": {
-      "editor.formatOnType": true
+  "[javascript]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
   },
-  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[ruby]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "cSpell.userWords": ["chatgpt", "Monokai", "techtrain"],
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.accessibilitySupport": "off",
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.dragAndDrop": false,
+  "editor.fontSize": 12,
+  "editor.formatOnSave": false,
   "editor.inlineSuggest.enabled": true,
-  "workbench.activityBar.visible": true
+  "editor.snippetSuggestions": "top",
+  "editor.suggest.preview": true,
+  "editor.suggest.showMethods": true,
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "emmet.includeLanguages": {
+    "erb": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.variables": {
+    "lang": "ja"
+  },
+  "files.associations": {
+    "*.erb": "erb"
+  },
+  "files.autoGuessEncoding": true,
+  "files.autoSave": "afterDelay",
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "python.linting.flake8Args": ["--ignore=E501"],
+  "python.linting.flake8Enabled": true,
+  "techtrain-railway.optOutTelemetry": false,
+  "terminal.external.osxExec": "warp.app",
+  "terminal.integrated.inheritEnv": false,
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+  "window.zoomLevel": 1,
+  "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "terminal.integrated.fontFamily": "AurulentSansM Nerd Font"
 }
