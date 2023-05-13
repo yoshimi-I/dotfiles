@@ -19,6 +19,11 @@ brew:
 	@.bin/brew.sh
 	@echo "\033[0;32mDone.\033[0m"
 
+# Set Iterm2 font
+	@echo "\033[0;34mRun nerd-font.sh\033[0m"
+	@.bin/nerd-font.sh
+	@echo "\033[0;32mDone.\033[0m"
+
 # Set GitHub
 github:
 	@echo "\033[0;34mRun github.sh\033[0m"
