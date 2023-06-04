@@ -12,9 +12,4 @@ for dotfile in "${SCRIPT_DIR}"/.??* ; do
     ln -fnsv "$dotfile" "$HOME"
 done
 
-echo "Create a symbolic starship setting..."
-STARSHIP_CONFIG_DIR="$(cd "$(SCRIPT_DIR)" && pwd)"/starship"
-
-ln -fnsv "${STARSHIP_CONFIG_DIR}/starship.toml" "$HOME/.config"
-
 source ~/.zshrc

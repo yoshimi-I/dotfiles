@@ -6,6 +6,8 @@ tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "sanemat/font"
+tap "homebrew/cask-fonts"
+
 
 brew "git"
 brew "gitmoji"
@@ -39,6 +41,7 @@ cask "alfred"
 cask "iterm2"
 cask "dbeaver-community"
 cask "fig"
+cask "font-hack-nerd-font"
 
 mas "LINE", id: 539883307
 mas "Microsoft Excel", id: 462058435
