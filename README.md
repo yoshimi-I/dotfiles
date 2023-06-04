@@ -66,3 +66,11 @@ Set google chrome.
 1. Access each URL in "~/dotfiles/chrome/extensions" with Google Chrome.
 2. Click "Add Chrome" button.
 ```
+
+Set Raycast
+```
+1. Open Rascast App
+2. Search Warp on Rascast and  click the button labeled "Action" below.
+3. Choose Configure Application
+4. Choice Hotkey
+```
