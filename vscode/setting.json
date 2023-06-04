@@ -51,6 +51,7 @@
     "**/.svn": true,
     "**/CVS": true
   },
+  "jupyter.experimental.debugging": true,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
@@ -60,12 +61,13 @@
   "terminal.external.osxExec": "warp.app",
   "terminal.integrated.inheritEnv": false,
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
-  "window.zoomLevel": 1,
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
   "workbench.iconTheme": "material-icon-theme",
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
-  "terminal.integrated.fontFamily": "AurulentSansM Nerd Font"
+  "terminal.integrated.fontFamily": "AurulentSansM Nerd Font",
+  "window.zoomLevel": 1,
+  "hediet.vscode-drawio.resizeImages": null
 }
