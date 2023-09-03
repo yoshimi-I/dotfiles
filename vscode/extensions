@@ -1,5 +1,6 @@
 aprilandjan.ascii-tree-generator
 azemoh.one-monokai
+bierner.markdown-mermaid
 burkeholland.simple-react-snippets
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
@@ -12,8 +13,10 @@ eamodio.gitlens
 EditorConfig.EditorConfig
 esbenp.prettier-vscode
 fabiospampinato.vscode-monokai-night
+figma.figma-vscode-extension
 formulahendry.auto-rename-tag
 gencay.vscode-chatgpt
+genieai.chatgpt-vscode
 GitHub.copilot
 GitHub.copilot-labs
 golang.go
@@ -21,6 +24,7 @@ GraphQL.vscode-graphql
 GraphQL.vscode-graphql-syntax
 hediet.vscode-drawio
 infeng.vscode-react-typescript
+jakob101.RelativePath
 jasonnutter.search-node-modules
 jawandarajbir.react-vscode-extension-pack
 jprestidge.theme-material-theme
@@ -49,6 +53,7 @@ orsenkucher.vscode-graphql
 PKief.material-icon-theme
 pmneo.tsimporter
 Prisma.prisma
+qwtel.sqlite-viewer
 rangav.vscode-thunder-client
 rebornix.ruby
 ritwickdey.LiveServer
