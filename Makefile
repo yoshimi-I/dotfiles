@@ -21,8 +21,8 @@ brew:
 
 # Set Iterm2 font
 iterm2:
-	@echo "\033[0;34mRun nerd-font.sh\033[0m"
-	@.bin/nerd-font.sh
+	@echo "\033[0;34mRun setup_iterm2.sh\033[0m"
+	@.bin/setup_iterm2.sh
 	@echo "\033[0;32mDone.\033[0m"
 
 # Set Starship font
