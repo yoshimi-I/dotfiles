@@ -20,6 +20,7 @@ brew:
 	@echo "\033[0;32mDone.\033[0m"
 
 # Set Iterm2 font
+iterm2:
 	@echo "\033[0;34mRun nerd-font.sh\033[0m"
 	@.bin/nerd-font.sh
 	@echo "\033[0;32mDone.\033[0m"
