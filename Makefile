@@ -1,5 +1,5 @@
 # Run all shell files
-all:init link brew github golang
+all:init link brew staship iterm2 github golang
 
 # run init.sh
 init:
@@ -19,6 +19,7 @@ brew:
 	@.bin/brew.sh
 	@echo "\033[0;32mDone.\033[0m"
 
+iterm2:
 # Set Iterm2 font
 iterm2:
 	@echo "\033[0;34mRun setup_iterm2.sh\033[0m"
