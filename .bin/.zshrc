@@ -46,6 +46,12 @@ setopt no_beep
 DIRSTACKSIZE=100
 setopt AUTO_PUSHD
 
+#vim
+alias vi="nvim"
+alias vim="nvim"
+alias view="nvim -R"
+alias vimdiff="nvim -d"
+
 # git
 autoload -Uz vcs_info
 setopt prompt_subst
@@ -105,4 +111,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
