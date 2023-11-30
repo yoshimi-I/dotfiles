@@ -61,3 +61,8 @@ Set Raycast
 3. Choose Configure Application
 4. Choice Hotkey
 ```
+
+How to edit ./zshrc
+```sh
+open -a TextEdit ~/.zshrc
+```
