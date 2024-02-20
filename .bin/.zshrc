@@ -83,13 +83,18 @@ path=(
 
 eval "$(starship init zsh)"
 eval "$(direnv hook zsh)"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+# goのセットアップ
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
 eval "$(goenv init -)"
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
+
+# rustのセットアップ
+export PATH="$PATH:$HOME/.cargo/bin"
 
 alias mql='mysql -uroot -proot -h127.0.0.1 -P3311'
 
