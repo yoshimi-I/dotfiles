@@ -7,7 +7,11 @@
     "files.trimTrailingWhitespace": false
   },
   "[python]": {
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    }
   },
   "[ruby]": {
     "editor.insertSpaces": true,
@@ -23,7 +27,6 @@
   "editor.copyWithSyntaxHighlighting": false,
   "editor.dragAndDrop": false,
   "editor.fontSize": 12,
-  "editor.formatOnSave": false,
   "editor.inlineSuggest.enabled": true,
   "editor.snippetSuggestions": "top",
   "editor.suggest.preview": true,
@@ -42,7 +45,6 @@
     "*.erb": "erb"
   },
   "files.autoGuessEncoding": true,
-  "files.autoSave": "afterDelay",
   "files.eol": "\n",
   "files.exclude": {
     "**/.DS_Store": true,
@@ -61,13 +63,35 @@
   "terminal.external.osxExec": "warp.app",
   "terminal.integrated.inheritEnv": false,
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
-  "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
   "workbench.iconTheme": "material-icon-theme",
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
   "terminal.integrated.fontFamily": "AurulentSansM Nerd Font",
-  "window.zoomLevel": 1,
-  "hediet.vscode-drawio.resizeImages": null
+  "hediet.vscode-drawio.resizeImages": null,
+  "git.suggestSmartCommit": false,
+  "notebook.lineNumbers": "on",
+  "files.autoSave": "afterDelay",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "hediet.vscode-drawio.theme": "Kennedy",
+  "editor.formatOnSave": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "genieai.promptPrefix.addComments": "このコードに日本語のコメントを追加してください。",
+  "genieai.promptPrefix.addTests": "このコードのテストを実装してください。",
+  "genieai.promptPrefix.completeCode": "このコードを完成させてください。",
+  "genieai.promptPrefix.explain": "このコードを日本語で説明をしてください。",
+  "genieai.promptPrefix.findProblems": "このコードのバグを見つけてください。",
+  "genieai.promptPrefix.optimize": "このコードを最適化してください。",
+  "explorer.confirmDragAndDrop": false,
+  "github.copilot.advanced": {
+
+  },
+  "remote.autoForwardPortsSource": "hybrid",
+  "window.zoomLevel": 1
 }

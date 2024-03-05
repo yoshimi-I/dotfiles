@@ -13,56 +13,69 @@
 &emsp;
 ## Overview
 
-This repository contains scripts to set macOS.
+macOSのセットアップ方法
 
 &emsp;
 
 
 
 
-## Install
+## セットアップ方法
 
-Download installation materials.
+1. このリポジトリをcloneしてください
 
 ```shell
 $ cd ~ && git clone https://github.com/yoshimi-I/dotfiles
 ```
-Authorization all shell files
+2. 全てのfileへの権限付与を行ってください
 ```shell
 $ cd ~/dotfiles && chmod +x ./* && chmod +x ./.bin/* 
 ```
-Set macOS.
+3. 全shellの実行をmakeで行います
 
 ```shell
 $ make
 ```
 
-Set visual studio code.
+## 各種アプリケーションの設定
+
+visual studio code
 
 ```
-1. Press "shift + command + P" on visual studio code.
-2. Search and Click "Command: Install 'code' command in PATH command".
-3. Restart visual studio code.
-4. Execute "cd dotfiles && sh ./vscode/sync.sh".
-5. If you want to output the current extensions, execute "code --list-extensions > ~/dotfiles/vscode/extensions".
-```
+1. Visual Studio Codeで「shift + command + P」を押す
+2. 「Command: Install 'code' command in PATH command」を検索してクリックする
+3. Visual Studio Codeを再起動
+4. 「cd dotfiles && sh ./vscode/sync.sh」を実行
+5. 現在の拡張機能を出力したい場合は、「code --list-extensions > ~/dotfiles/vscode/extensions」を実行
 
-Set google chrome.
+```
+google chrome
 
 ```
 1. Access each URL in "~/dotfiles/chrome/extensions" with Google Chrome.
 2. Click "Add Chrome" button.
 ```
 
-Set Raycast
-```
-1. Open Rascast App
-2. Search Warp on Rascast and  click the button labeled "Action" below.
-3. Choose Configure Application
-4. Choice Hotkey
+Raycast
 ```
 
-How to edit ./zshrc
-```sh
-open -a TextEdit ~/.zshrc
+1. Rascastアプリを開く
+2. RascastでWarpを検索し、下にある「アクション」ボタンをクリックする
+3.「アプリケーションを設定する」を選択する
+4. hot key を選択する
+```
+
+## 古いPCで行うこと
+brewのdumpを行う
+```
+1. ターミナルかで任意のディレクトリに移動
+2. brewのdumpをとる
+    brew bundle dump --global
+```
+
+vscodeの拡張機能のdumpを行う
+```
+1. 任意のディレクトリに移動
+2. 拡張機能のdumpをとる
+    code --list-extensions > extensions
 ```
