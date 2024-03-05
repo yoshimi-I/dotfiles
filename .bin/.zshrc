@@ -86,7 +86,7 @@ eval "$(direnv hook zsh)"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
-# pythnのセットアップ
+# pythonのセットアップ
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
