@@ -36,8 +36,3 @@ github:
 	@echo "\033[0;34mRun github.sh\033[0m"
 	@.bin/github.sh
 	@echo "\033[0;32mDone.\033[0m"
-
-golang:
-	@echo "\033[0;34mRun golang.sh\033[0m"
-	@.bin/golang.sh
-	@echo "\033[0;32mDone.\033[0m"
