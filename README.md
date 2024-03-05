@@ -79,3 +79,8 @@ vscodeの拡張機能のdumpを行う
 2. 拡張機能のdumpをとる
     code --list-extensions > extensions
 ```
+vscodeの設定を反映させる
+```
+/Users/username/Library/Application Support/Code/User/settings.json
+が該当
+```
