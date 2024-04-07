@@ -105,6 +105,7 @@ alias mql='mysql -uroot -proot -h127.0.0.1 -P3311'
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
 # . /opt/homebrew/miniconda3/etc/profile.d/conda.sh  # commented out by conda initialize
 
 # # >>> conda initialize >>>
