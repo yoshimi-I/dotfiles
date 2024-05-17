@@ -107,7 +107,7 @@ alias mql='mysql -uroot -proot -h127.0.0.1 -P3311'
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 
 # add postgres path
-export PATH="/usr/local/opt/postgresql@16/bin:$PATH"
+export PATH="/usr/local/opt/postgresql/bin:$PATH"
 
 # . /opt/homebrew/miniconda3/etc/profile.d/conda.sh  # commented out by conda initialize
 
