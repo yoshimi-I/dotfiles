@@ -103,17 +103,8 @@ nmap u <Action>($Undo)
 " 共通の単語を選ぶアクションを <C-S-g> にマッピング
 nmap <C-g> <Action>(SelectAllOccurrences)
 
-" カーソル下の単語を完全一致で選択して置換するマッピング
-nnoremap <leader>r :%s/\<<C-r><C-w>\>//g<Left><Left>
-
-" 次の出現場所を選択するアクションを <C-g> にマッピング
-nmap <C-g> <Action>(SelectNextOccurrence)
-
-" Project Tool Window を Control + w にマッピング
-map <C-w> :action ViewProject<CR>
-
 " 現在のファイルパスを表示するショートカット
 map <C-p> :action ShowFilePath<CR>
 
 " 現在のファイルを隣のウィンドウに移動
-map <C-w>m <Action>(MoveEditorToOppositeTabGroup)
+nmap gw <Action>(MoveEditorToOppositeTabGroup)
