@@ -108,3 +108,6 @@ map <C-p> :action ShowFilePath<CR>
 
 " 現在のファイルを隣のウィンドウに移動
 nmap gw <Action>(MoveEditorToOppositeTabGroup)
+
+" ファイル構造を表示/隠すショートカット
+nmap <C-t> <Action>(ActivateStructureToolWindow)
