@@ -1,19 +1,16 @@
-" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+
 "   the same commands as the original .vimrc configuration.
 " You can find a list of commands here: https://jb.gg/h38q75
 " Find more examples here: https://jb.gg/share-ideavimrc
 
-
 " Source your .vimrc
 source ~/.vimrc
-
 
 "" -- Suggested options --
 " Show a few lines of context around the cursor. Note that this makes the
 " text scroll if you mouse-click near the start or end of the window.
 set scrolloff=5
 
-" Do incremental searching.
 set incsearch
 
 " Don't use Ex mode, use Q for formatting.
@@ -24,67 +21,99 @@ map Q gq
 " Highlight copied text
 Plug 'machakann/vim-highlightedyajnk
 " Commentary plugin
-Plug 'tpope/vim-commentary'
-
-
-"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
-"" Map \r to the Reformat Code action
-"map \r <Action>(ReformatCode)
-
-"" Map <leader>d to start ebug
-"map <leader>d <Action>(Debug)
-
-"" Map \b to toggle the breakpoint on the current line
-"map \b <Action>(ToggleLineBreakpoint)
-
-vet mapleader = ' '
-nnoremap <Leader>ev :<C-u>vsplit ~/.ideavimrc<CR>
-nnoremap <Leader>sv :<C-u>source ~/.ideavimrc<CR>b
-
 " 定義ジャンプをgdにマッピング
-map gd <Action>(GotoDeclaration)
+map gu <Action>(GotoDeclaration)
 
 " インターフェースジャンプをgiにマッピング
-map gi <Action>(GotoSuperMethod)
+nmap gs <Action>(GotoSuperMethod)
 
 " 実装ジャンプをggにマッピング
-map gg <Action>(GotoImplementation)
+nmap gi <Action>(GotoImplementation)
+
+" <C-l>で次のスプリッタに移動
+nmap <C-l> <Action>(NextSplitter)
+
+" <C-h>で前のスプリッタに移動
+nmap <C-h> <Action>(PrevSplitter)
 
 " さっき見たファイルへの移動を<C-h>にマッピング
-map <C-h> <Action>(Back)
+nmap <C-[> <Action>(Back)
 
 " さっき見たファイルから進むを<C-l>にマッピング
-map <C-l> <Action>(Forward)
+nmap <C-]> <Action>(Forward)
 
 " タブ移動を<C-o>にマッピング
-map <C-j> <Action>(PreviousTab)
+nmap <C-j> <Action>(PreviousTab)
 
 " タブ移動を<-u>にマッピング
-map <C-k> <Action>(NextTab)
-
-" 次のエディタタブに移動
-map <C-S-Right> <Action>(NextEditorTab)
-
-" 前のエディタタブに移動
-map <C-S-Left> <Action>(PreviousEditorTab)
-
-
-" 隣のウィンドウへの移動を<C-w>にマッピング
-map mw <Action>(MoveEditorToOppositeTabGroup)
-
-
-" 隣に開いているウィンドウにカーソルを移動
-map <C-w>h <Action>(VimWindowLeft)
-map <C-w>j <Action>(VimWindowDown)
-map <C-w>k <Action>(VimWindowUp)
-map <C-w>l <Action>(VimWindowRight)
-
-
-" iキーのInsertモード開始を無効化
-unmap i
-
-" Insertモードを開始するキーをaに変更
-map a i
+nmap <C-k> <Action>(NextTab)
 
 nmap [q <Action>(GotoPreviousError)
 nmap ]q <Action>(GotoNextError)
+gs <Action>(GotoSuperMethod)
+
+" grで使用箇所を検索
+nmap gr <Action>(FindUsages)
+
+" <leader>faでアクションを実行
+nmap <leader>fa <Action>(GotoAction)
+
+" <leader>ffですべてを検索
+nmap <leader>ff <Action>(SearchEverywhere)
+
+" <leader>fwでパス内を検索
+nmap <leader>fw <Action>(FindInPath)
+
+" <leader>cでコンテンツを閉じる
+nmap <leader>c <Action>(CloseContent)
+
+" <leader>bcでアクティブなエディタ以外を閉じる
+nmap <leader>bc <Action>(CloseAllEditorsButActive)
+
+" <leader>bCですべてのエディタを閉じる
+nmap <leader>bC <Action>(CloseAllEditors)
+
+" <leader>eでプロジェクトツールウィンドウをアクティブにする
+nmap <leader>e <Action>(ActivateProjectToolWindow)
+
+" <leader>laでインテーションアクションを表示
+nmap <leader>la <Action>(ShowIntentionActions)
+
+" <leader>lsで構造ツールウィンドウをアクティブにする
+nmap <leader>ls <Action>(ActivateStructureToolWindow)
+
+" <leader>lrで要素をリネーム
+nmap <leader>lr <Action>(RenameElement)
+
+" <leader>oでエディタから脱出
+nmap <leader>o <Action>(EditorEscape)
+
+" <leader>thでターミナルツールウィンドウをアクティブにする
+nmap <leader>th <Action>(ActivateTerminalToolWindow)
+
+" <leader>qですべてのウィンドウを非表示
+nmap <leader>q <Action>(HideAllWindows)
+
+" <leader>/で行コメントを挿入
+nmap <leader>/ <Action>(CommentByLineComment)
+
+" uで操作を取り消す（アンドゥ）
+nmap u <Action>($Undo)
+
+" 共通の単語を選ぶアクションを <C-S-g> にマッピング
+nmap <C-g> <Action>(SelectAllOccurrences)
+
+" カーソル下の単語を完全一致で選択して置換するマッピング
+nnoremap <leader>r :%s/\<<C-r><C-w>\>//g<Left><Left>
+
+" 次の出現場所を選択するアクションを <C-g> にマッピング
+nmap <C-g> <Action>(SelectNextOccurrence)
+
+" Project Tool Window を Control + w にマッピング
+map <C-w> :action ViewProject<CR>
+
+" 現在のファイルパスを表示するショートカット
+map <C-p> :action ShowFilePath<CR>
+
+" 現在のファイルを隣のウィンドウに移動
+map <C-w>m <Action>(MoveEditorToOppositeTabGroup)
