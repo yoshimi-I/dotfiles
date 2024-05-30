@@ -107,7 +107,7 @@ nmap <C-g> <Action>(SelectAllOccurrences)
 map <C-p> :action ShowFilePath<CR>
 
 " 現在のファイルを隣のウィンドウに移動
-nmap gw <Action>(MoveEditorToOppositeTabGroup)
+nmap <C-w> <Action>(MoveEditorToOppositeTabGroup)
 
 " ファイル構造を表示するショートカットをマッピング
 nmap <C-t> <Action>(ActivateProjectToolWindow)
