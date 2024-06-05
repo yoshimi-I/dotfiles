@@ -107,3 +107,5 @@ map <C-p> :action ShowFilePath<CR>
 " 現在のファイルを隣のウィンドウに移動
 nmap <C-w> <Action>(MoveEditorToOppositeTabGroup)
 
+" ファイルを閉じる
+nmap <leader>wq :action CloseEditor<CR>
