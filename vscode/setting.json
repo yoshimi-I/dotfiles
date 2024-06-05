@@ -89,25 +89,135 @@
   "genieai.promptPrefix.findProblems": "このコードのバグを見つけてください。",
   "genieai.promptPrefix.optimize": "このコードを最適化してください。",
   "explorer.confirmDragAndDrop": false,
-  "github.copilot.advanced": {
-
-  },
+  "github.copilot.advanced": {},
   "remote.autoForwardPortsSource": "hybrid",
   "window.zoomLevel": 1,
-
-
-
-
-
-
-
-
-    "vim.vimrc.enable": true,
-    "vim.vimrc.path": "/Users/yoshimi/.vimrc",
-    "vim.disableAnnoyingNeovimMessage": true,
-    "vim.hlsearch": true,
-    "vim.incsearch": true,
-    "vim.ignorecase": true,
-    "vim.smartcase": true,
-    "vim.useSystemClipboard": true
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "/Users/yoshimi/.vimrc",
+  "vim.disableAnnoyingNeovimMessage": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.ignorecase": true,
+  "vim.smartcase": true,
+  "vim.useSystemClipboard": true,
+  "vim.leader": " ",
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-x>": false
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["x"],
+      "after": ["\"", "_", "x"]
+    },
+    {
+      "before": ["s"],
+      "after": ["\"", "_", "s"]
+    },
+    {
+      "before": [";"],
+      "after": [":"]
+    },
+    {
+      "before": [":"],
+      "after": [";"]
+    },
+    {
+      "before": ["Y"],
+      "after": ["y", "$"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "after": ["<C-w>", "h"]
+    },
+    {
+      "before": ["<leader>", "j"],
+      "after": ["<C-w>", "j"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "after": ["<C-w>", "k"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["<C-w>", "l"]
+    },
+    {
+      "before": ["["],
+      "commands": ["editor.action.peekDefinition"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "commands": [":sp"]
+    },
+    {
+      "before": ["<leader>", "v"],
+      "commands": [":vs"]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["g", "t"]
+    },
+    {
+      "before": ["<C-h>"],
+      "after": ["g", "T"]
+    },
+    {
+      "before": ["g", "r"],
+      "after": ["g", "T"]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "after": ["o", "<ESC>"]
+    },
+    {
+      "before": ["<leader>", "O"],
+      "after": ["O", "<ESC>"]
+    },
+    {
+      "before": ["n"],
+      "after": ["n", "z", "z"]
+    },
+    {
+      "before": ["N"],
+      "after": ["N", "z", "z"]
+    },
+    {
+      "before": ["*"],
+      "after": ["*", "z", "z"]
+    },
+    {
+      "before": ["#"],
+      "after": ["#", "z", "z"]
+    },
+    {
+      "before": ["<C-n>"],
+      "after": ["g", "b"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["editor.action.insertCursorAbove"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["editor.action.insertCursorBelow"]
+    }
+  ]
 }
