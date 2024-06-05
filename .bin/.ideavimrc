@@ -1,4 +1,3 @@
-
 "   the same commands as the original .vimrc configuration.
 " You can find a list of commands here: https://jb.gg/h38q75
 " Find more examples here: https://jb.gg/share-ideavimrc
@@ -17,6 +16,8 @@ set incsearch
 map Q gq
 
 " --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+
+let mapleader = " "
 
 " Highlight copied text
 Plug 'machakann/vim-highlightedyajnk
@@ -55,14 +56,11 @@ gs <Action>(GotoSuperMethod)
 " grで使用箇所を検索
 nmap gr <Action>(FindUsages)
 
-" <leader>faでアクションを実行
-nmap <leader>fa <Action>(GotoAction)
-
 " <leader>ffですべてを検索
 nmap <leader>ff <Action>(SearchEverywhere)
 
 " <leader>fwでパス内を検索
-nmap <leader>fw <Action>(FindInPath)
+nmap <leader>fa <Action>(FindInPath)
 
 " <leader>cでコンテンツを閉じる
 nmap <leader>c <Action>(CloseContent)
@@ -74,13 +72,13 @@ nmap <leader>bc <Action>(CloseAllEditorsButActive)
 nmap <leader>bC <Action>(CloseAllEditors)
 
 " <leader>eでプロジェクトツールウィンドウをアクティブにする
-nmap <leader>e <Action>(ActivateProjectToolWindow)
+nmap <leader>ls <Action>(ActivateProjectToolWindow)
 
 " <leader>laでインテーションアクションを表示
 nmap <leader>la <Action>(ShowIntentionActions)
 
 " <leader>lsで構造ツールウィンドウをアクティブにする
-nmap <leader>ls <Action>(ActivateStructureToolWindow)
+nmap <leader>e <Action>(ActivateStructureToolWindow)
 
 " <leader>lrで要素をリネーム
 nmap <leader>lr <Action>(RenameElement)
@@ -108,6 +106,3 @@ map <C-p> :action ShowFilePath<CR>
 
 " 現在のファイルを隣のウィンドウに移動
 nmap <C-w> <Action>(MoveEditorToOppositeTabGroup)
-
-" ファイル構造を表示するショートカットをマッピング
-nmap <C-t> <Action>(ActivateProjectToolWindow)
