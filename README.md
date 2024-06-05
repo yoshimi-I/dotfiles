@@ -84,3 +84,9 @@ vscodeの設定を反映させる
 /Users/username/Library/Application Support/Code/User/settings.json
 が該当
 ```
+
+## Vscodeのvimrcが読み込まれない場合
+1. 設定を開く
+2. そこからvimrcとボタンを押す
+3. ![Alt text](image.png)
+ここを設定する

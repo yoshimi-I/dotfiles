@@ -93,5 +93,53 @@
 
   },
   "remote.autoForwardPortsSource": "hybrid",
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+
+
+
+
+
+
+
+
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "/Users/yoshimi/.vimrc",
+  "vim.disableAnnoyingNeovimMessage": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.ignorecase": true,
+  "vim.smartcase": true,
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-x>": false
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "y"],
+      "commands": ["editor.action.clipboardCopyAction"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["editor.action.clipboardPasteAction"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["<C-s>"],
+      "commands": ["workbench.action.files.save"]
+    }
+  ]
 }
