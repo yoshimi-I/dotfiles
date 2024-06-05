@@ -3,3 +3,5 @@ inoremap jk <Esc>
 
 " ヤンクでクリップボードに保存
 set clipboard=unnamedplus
+
+let mapleader = "\<space>"
