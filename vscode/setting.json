@@ -188,7 +188,7 @@
       "commands": ["workbench.action.terminal.toggleTerminal"]
     },
     {
-      "before": ["<C-k>"],
+      "before": ["<C-e>"],
       "commands": ["workbench.action.focusActiveEditorGroup"]
     }
   ],
