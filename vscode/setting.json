@@ -101,7 +101,7 @@
   },
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<C-k>"],
+      "befor": ["<C-k>"],
       "after": ["g", "t"]
     },
     {
@@ -187,6 +187,20 @@
     {
       "before": ["<leader>", "t"],
       "commands": ["workbench.action.terminal.toggleTerminal"]
+    },
+    {
+      "before": ["<leader>","q", "t"],
+      "commands": ["workbench.action.focusActiveEditorGroup"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-g>"],
+      "commands": ["editor.action.addSelectionToNextFindMatch"]
+    },
+    {
+      "before": ["<leader>", "g"],
+      "commands": ["editor.action.selectHighlights"]
     }
   ]
 }
