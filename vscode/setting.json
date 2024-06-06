@@ -168,7 +168,7 @@
       "commands": ["workbench.action.closeActiveEditor"]
     },
     {
-      "before": ["<leader>", "e"],
+      "before": ["<C-e>"],
       "commands": ["workbench.action.toggleSidebarVisibility"]
     },
     {
