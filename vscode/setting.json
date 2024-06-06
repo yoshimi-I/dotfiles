@@ -101,7 +101,7 @@
   },
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "befor": ["<C-k>"],
+      "before": ["<C-k>"],
       "after": ["g", "t"]
     },
     {
@@ -154,9 +154,8 @@
     },
     {
       "before": ["<leader>", "l", "s"],
-      "commands": [
+      "commands":
         "workbench.view.explorer"
-      ]
     },
     {
       "before": ["u"],
@@ -189,7 +188,7 @@
       "commands": ["workbench.action.terminal.toggleTerminal"]
     },
     {
-      "before": ["<leader>","q", "t"],
+      "before": ["<C-k>"],
       "commands": ["workbench.action.focusActiveEditorGroup"]
     }
   ],
