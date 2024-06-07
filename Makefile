@@ -1,5 +1,5 @@
 # Run all shell files
-all:init link brew  iterm2 staship github golang
+all: init link brew iterm2 staship github  wezterm
 
 # run init.sh
 init:
@@ -22,7 +22,7 @@ brew:
 # Set Iterm2 font
 iterm2:
 	@echo "\033[0;34mRun setup_iterm2.sh\033[0m"
-	@.bin/setup_iterm2.sh
+	@.config/iterm2/setup_iterm2.sh
 	@echo "\033[0;32mDone.\033[0m"
 
 # Set Starship font
@@ -35,4 +35,10 @@ staship:
 github:
 	@echo "\033[0;34mRun github.sh\033[0m"
 	@.bin/github.sh
+	@echo "\033[0;32mDone.\033[0m"
+
+# Set WezTerm
+wezterm:
+	@echo "\033[0;34mRun wezterm.sh\033[0m"
+	@.config/wezterm/wezterm.sh
 	@echo "\033[0;32mDone.\033[0m"
