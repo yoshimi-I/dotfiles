@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 echo "Set up Starship "
-cp ~/dotfiles/starship/starship.toml ~/.config
+cp ~/dotfiles/.config/starship/starship.toml ~/.config
 
 # 既存のシンボリックリンクがルバある場合は削除
 [ -L ~/.config/starship.toml ] && rm ~/.config/starship.toml
