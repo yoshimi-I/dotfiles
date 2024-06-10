@@ -1,19 +1,12 @@
-#!/bin/sh
+#!/bin/zsh
 
-# 変数定義
-TARGET_DIR="$HOME/.config/wezterm"
-SOURCE_FILE="$(pwd)/.config/wezterm/wezterm.lua"
-LINK_NAME="$TARGET_DIR/wezterm.lua"
+echo "Set up WezTerm"
 
-# ディレクトリが存在するか確認し、存在しない場合は作成
-if [ ! -d "$TARGET_DIR" ]; then
-  mkdir -p "$TARGET_DIR"
-fi
+# WezTermの設定ディレクトリが存在しない場合は作成
+mkdir -p ~/.config/wezterm
 
-# シンボリックリンクが既に存在する場合は削除
-if [ -L "$LINK_NAME" ]; then
-  rm "$LINK_NAME"
-fi
+# 既存のシンボリックリンクがある場合は削除
+[ -L ~/.config/wezterm/wezterm.lua ] && rm ~/.config/wezterm/wezterm.lua
 
 # シンボリックリンクを作成
-ln -s "$SOURCE_FILE" "$LINK_NAME"
+ln -s ~/dotfiles/.config/wezterm/wezterm.lua ~/.config/wezterm/wezterm.lua

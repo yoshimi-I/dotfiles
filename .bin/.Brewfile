@@ -58,6 +58,7 @@ cask "google-chrome", args: { appdir: "/Applications" }
 cask "google-drive", args: { appdir: "/Applications" }
 cask "intellij-idea", args: { appdir: "/Applications" }
 cask "iterm2"
+cask "wezterm"
 cask "miniconda"
 cask "ngrok", args: { appdir: "/Applications" }
 cask "notion", args: { appdir: "/Applications" }
