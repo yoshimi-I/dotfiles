@@ -98,7 +98,7 @@ nmap <leader>/ <Action>(CommentByLineComment)
 " uで操作を取り消す（アンドゥ）
 nmap u <Action>($Undo)
 
-" 共通の単語を選ぶアクションを <C-S-g> にマッピング
+" 共通の単語を選ぶアクションを <C-g> にマッピング
 nmap <C-g> <Action>(SelectAllOccurrences)
 
 " 現在のファイルパスを表示するショートカット
@@ -109,3 +109,9 @@ nmap <C-w> <Action>(MoveEditorToOppositeTabGroup)
 
 " ファイルを閉じる
 nmap <leader>wq :action CloseEditor<CR>
+
+" 構造体の情報を出力
+map <C-s> :action GotoTypeDeclaration<CR>
+
+nmap <C-b> :action QuickJavaDoc<CR>
+map <C-e> :action GuiDesigner.QuickJavadoc<CR>
