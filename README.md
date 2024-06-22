@@ -89,4 +89,4 @@ vscodeの設定を反映させる
 1. 設定を開く
 2. そこからvimrcとボタンを押す
 3. 以下の画像の部分に設定
-   ![Alt text](image.png)
+- ![Alt text](image.png)
