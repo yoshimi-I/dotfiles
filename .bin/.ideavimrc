@@ -78,7 +78,7 @@ nmap <leader>ls <Action>(ActivateProjectToolWindow)
 nmap <leader>la <Action>(ShowIntentionActions)
 
 " <leader>lsで構造ツールウィンドウをアクティブにする
-nmap <leader>e <Action>(ActivateStructureToolWindow)
+nmap <leader>s <Action>(ActivateStructureToolWindow)
 
 " <leader>lrで要素をリネーム
 nmap <leader>lr <Action>(RenameElement)
