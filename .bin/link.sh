@@ -12,4 +12,5 @@ for dotfile in "${SCRIPT_DIR}"/.??* ; do
     ln -fnsv "$dotfile" "$HOME"
 done
 
+echo "Set up Starship..."
 source ~/.zshrc

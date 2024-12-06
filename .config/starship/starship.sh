@@ -11,3 +11,4 @@ ln -s ~/dotfiles/starship/starship.toml ~/.config/starship.toml
 
 # starshipの設定を読み込む
 source ~/.zshrc
+

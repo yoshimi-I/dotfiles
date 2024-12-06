@@ -8,5 +8,6 @@ mkdir -p ~/.config/wezterm
 # 既存のシンボリックリンクがある場合は削除
 [ -L ~/.config/wezterm/wezterm.lua ] && rm ~/.config/wezterm/wezterm.lua
 
+
 # シンボリックリンクを作成
 ln -s ~/dotfiles/.config/wezterm/wezterm.lua ~/.config/wezterm/wezterm.lua
