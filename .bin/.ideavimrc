@@ -19,6 +19,8 @@ map Q gq
 
 let mapleader = " "
 
+set multiple-cursors
+
 " Highlight copied text
 Plug 'machakann/vim-highlightedyajnk
 " Commentary plugin
@@ -117,7 +119,7 @@ nmap <C-b> :action QuickJavaDoc<CR>
 map <C-e> :action GuiDesigner.QuickJavadoc<CR>
 
 " ファイル内検索を / にマッピング
-nmap / <Action>(Find)
+nmap <Leader>f <Action>(Find)
 
 " ファイル内検索
 nmap <Leader>f <Action>(FindInPath)
@@ -134,3 +136,8 @@ nmap <Leader>o <Action>(ActivateStructureToolWindow)
 
 nmap gh <Action>(QuickDefinition)
 
+" マルチカーソルの追加選択（下方向）
+nmap <leader>j <Action>(SelectNextOccurrence)
+
+" マルチカーソルの追加選択（上方向）
+nmap <leader>k <Action>(SelectPreviousOccurrence)
