@@ -27,7 +27,7 @@ macOSのセットアップ方法
 ```shell
 $ cd ~ && git clone https://github.com/yoshimi-I/dotfiles
 ```
-2. 全てのfileへの権限付与を行ってください
+2. 権限が足りない場合は全てのfileへの権限付与を行ってください
 ```shell
 $ cd ~/dotfiles && chmod +x ./* && chmod +x ./.bin/* 
 ```

@@ -89,13 +89,10 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 # goenvのセットアップ
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
-eval "$(goenv init -)"
 export PATH="$PATH:$(go env GOPATH)/bin"
 
 # rustのセットアップ
 export PATH="$PATH:$HOME/.cargo/bin"
-
-alias mql='mysql -uroot -proot -h127.0.0.1 -P3311'
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
