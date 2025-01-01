@@ -112,3 +112,7 @@ if [ -f '/Users/yoshimi/Documents/google-cloud-sdk/completion.zsh.inc' ]; then .
 
 # flutter path
 export PATH="$PATH:/Users/yoshimi/development/flutter/bin"
+
+# terraform ailias
+alias tf="terraform"
+alias tfmt "terraform fmt -recursive"
