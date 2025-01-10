@@ -68,3 +68,13 @@ vnoremap v <C-v>
 
 " U を押したら redo を実行（1つ先に進む）
 nnoremap U <C-r>
+
+" Ctrl + A で行の先頭に移動（ノーマルモード）
+nnoremap <leader>a ^
+" Ctrl + A で行の先頭に移動（ビジュアルモード）
+vnoremap <leader>a ^
+
+" Ctrl + E で行の末尾に移動（ノーマルモード）
+nnoremap <leader>e $
+" Ctrl + E で行の末尾に移動（ビジュアルモード）
+vnoremap <leader>e $
