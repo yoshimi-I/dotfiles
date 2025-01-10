@@ -1,3 +1,6 @@
+noremap j gj
+noremap k gk
+
 " jjでインサートモードを抜ける設定
 inoremap jk <Esc>
 
@@ -10,10 +13,10 @@ let mapleader = "\<space>"
 xnoremap p pgvy
 
 " leader + a で行の先頭（最初の非空白文字）に移動
-nnoremap <leader>a ^
+nnoremap <S-a> ^
 
 " leader + e で行の末尾に移動
-nnoremap <leader>e $
+nnoremap <S-e> $
 
 " leader + s で横分割
 nnoremap <leader>s :split<CR>
@@ -21,8 +24,8 @@ nnoremap <leader>s :split<CR>
 nnoremap <leader>v :vsplit<CR>
 
 " 分割したウィンドウ間の移動を簡略化
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
+nnoremap <S-h> <C-w>h
+nnoremap <S-l> <C-w>l
 
 " leader + c でバッファを削除し、ウィンドウを閉じる
 nnoremap <leader>c :bdelete<CR>
@@ -39,9 +42,9 @@ vnoremap <leader>d "+d
 xnoremap <leader>p "_dP
 
 " Control + j で前のバッファ（左のファイル）に移動
-nnoremap <silent> <C-j> :bprevious<CR>
+nnoremap <silent> <S-j> :bprevious<CR>
 " Control + k で次のバッファ（右のファイル）に移動
-nnoremap <silent> <C-k> :bnext<CR>
+nnoremap <silent> <S-k> :bnext<CR>
 
 " leader + t でNERDTreeをトグル
 nnoremap <leader>t :NERDTreeToggle<CR>
@@ -62,3 +65,6 @@ nnoremap <leader>m :browse oldfiles<CR>
 
 " Visual モード中に 'v' を押すと Visual Block モードに切り替える
 vnoremap v <C-v>
+
+" U を押したら redo を実行（1つ先に進む）
+nnoremap U <C-r>
