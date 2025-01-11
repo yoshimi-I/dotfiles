@@ -12,12 +12,6 @@ let mapleader = "\<space>"
 " ビジュアルモードで選択範囲をペースト
 xnoremap p pgvy
 
-" leader + a で行の先頭（最初の非空白文字）に移動
-nnoremap <S-a> ^
-
-" leader + e で行の末尾に移動
-nnoremap <S-e> $
-
 " leader + s で横分割
 nnoremap <leader>s :split<CR>
 " leader + v で縦分割
