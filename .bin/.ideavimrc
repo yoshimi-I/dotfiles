@@ -118,17 +118,8 @@ map <C-s> :action GotoTypeDeclaration<CR>
 nmap <C-b> :action QuickJavaDoc<CR>
 map <C-e> :action GuiDesigner.QuickJavadoc<CR>
 
-" ファイル内検索を / にマッピング
-nmap <Leader>f <Action>(Find)
-
-" ファイル内検索
-nmap <Leader>f <Action>(FindInPath)
-
 " クイックドキュメントを表示
 nmap K <Action>(QuickJavaDoc)
-
-" クイック定義を表示
-nmap gy <Action>(ShowTypeDefinition)
 
 
 " 構造ビューを表示
