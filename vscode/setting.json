@@ -23,7 +23,7 @@
         "editor.insertSpaces": true,
         "editor.tabSize": 2
     },
-    "python.analysis.extraPaths": [
+        "python.analysis.extraPaths": [
         "${workspaceFolder}",
         "${workspaceFolder}/src",
         "${workspaceFolder}/models"
@@ -35,9 +35,9 @@
     ],
     "python.envFile": "${workspaceFolder}/.env",
     "terminal.integrated.env.osx": {
-        "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/models",
-        "FIG_NEW_SESSION": "1"
-    },
+        "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/models",   
+    "FIG_NEW_SESSION": "1"
+        },
     "python.analysis.indexing": true,
     "python.analysis.autoSearchPaths": true,
     "python.analysis.useLibraryCodeForTypes": true,
