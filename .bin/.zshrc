@@ -86,10 +86,8 @@ eval "$(direnv hook zsh)"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
-# goenvのセットアップ
-export GOENV_ROOT="$HOME/.goenv"
-export PATH="$GOENV_ROOT/bin:$PATH"
-export PATH="$PATH:$(go env GOPATH)/bin"
+# goのセットアップ
+export PATH=$PATH:/usr/local/go/bin
 
 # rustのセットアップ
 export PATH="$PATH:$HOME/.cargo/bin"
@@ -116,3 +114,6 @@ export PATH="$PATH:/Users/yoshimi/development/flutter/bin"
 # terraform ailias
 alias tf="terraform"
 alias tfmt "terraform fmt -recursive"
+
+# gcloud
+export GOOGLE_APPLICATION_CREDENTIALS=$HOME/.config/gcloud/application_default_credentials.json
