@@ -129,3 +129,6 @@ alias gpl="git pull"
 # general directory
 alias univ="cd ~/Desktop/University"
 alias job="cd ~/Desktop/job"
+
+# docker ailias
+alias docker-reset="docker system prune -a --volumes"
