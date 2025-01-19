@@ -117,3 +117,15 @@ alias tfmt "terraform fmt -recursive"
 
 # gcloud
 export GOOGLE_APPLICATION_CREDENTIALS=$HOME/.config/gcloud/application_default_credentials.json
+
+# general ailias
+alias g="git"
+alias gs="git status"
+alias gc="git commit"
+alias gcm="git commit -m"
+alias gp="git push"
+alias gpl="git pull"
+
+# general directory
+alias univ="cd ~/Desktop/University"
+alias job="cd ~/Desktop/job"
