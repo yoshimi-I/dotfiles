@@ -84,8 +84,6 @@ end
 
 -- AppleScriptを使って「Ctrl + ←」を送る関数
 local function moveSpaceLeft()
-  -- key code 123 は「←」キーを意味します
-  -- using control down で Ctrl を押しながら、と指定
   hs.osascript.applescript([[
       tell application "System Events"
           key code 123 using control down
@@ -95,7 +93,6 @@ end
 
 -- AppleScriptを使って「Ctrl + →」を送る関数
 local function moveSpaceRight()
-  -- key code 124 は「→」キーを意味します
   hs.osascript.applescript([[
       tell application "System Events"
           key code 124 using control down
@@ -105,13 +102,11 @@ end
 
 -- 「Ctrl + U」で左へ移動
 hs.hotkey.bind({"ctrl"}, "u", function()
-  hs.alert.show("move to left")
   moveSpaceLeft()
 end)
 
 -- 「Ctrl + I」で右へ移動
 hs.hotkey.bind({"ctrl"}, "i", function()
-  hs.alert.show("move to right")
   moveSpaceRight()
 end)
 
