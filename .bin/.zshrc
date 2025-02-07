@@ -132,4 +132,4 @@ alias job="cd ~/Desktop/job && ls"
 
 
 # docker ailias
-alias docker-reset="docker system prune -a --volumes"
+alias dcr="docker system prune -a --volumes"
