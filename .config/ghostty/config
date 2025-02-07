@@ -1,0 +1,13 @@
+font-family = "JetBrains Mono"
+macos-titlebar-style = hidden
+macos-non-native-fullscreen = true
+
+quick-terminal-position = "top"
+
+quick-terminal-screen = "mouse"
+
+quick-terminal-animation-duration = 0
+
+window-decoration = false
+
+keybind = global:shift+enter=toggle_quick_terminal
