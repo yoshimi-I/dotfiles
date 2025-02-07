@@ -7,10 +7,12 @@ tap "homebrew/cask-versions"
 tap "oven-sh/bun"
 tap "rcmdnk/file"
 tap "sanemat/font"
+
 brew "pycparser"
 brew "cffi"
 brew "python@3.12"
 brew "awscli"
+brew "cloud-sql-proxy"
 brew "cmake"
 brew "cocoapods"
 brew "direnv"
@@ -36,12 +38,9 @@ brew "mysql"
 brew "mysql-client"
 brew "neovim"
 brew "pnpm"
-brew "poetry"
-brew "postgresql@14"
 brew "postgresql@16"
 brew "pre-commit"
 brew "pyenv"
-brew "python@3.10"
 brew "python@3.11"
 brew "rbenv"
 brew "rust"
@@ -58,14 +57,17 @@ brew "tree"
 brew "virtualenv"
 brew "wget"
 brew "yarn"
+
 brew "bufbuild/buf/buf"
 brew "golangci/tap/golangci-lint"
 brew "oven-sh/bun/bun"
 brew "rcmdnk/file/brew-file"
-cask "alfred", args: { appdir: "/Applications" }
+
+cask "chatgpt", args: { appdir: "/Applications" }
 cask "cheatsheet", args: { appdir: "/Applications" }
 cask "chromedriver"
 cask "deepl", args: { appdir: "/Applications" }
+cask "dbeaver-community", args: { appdir: "/Applications" }
 cask "discord", args: { appdir: "/Applications" }
 cask "docker", args: { appdir: "/Applications" }
 cask "figma", args: { appdir: "/Applications" }
@@ -75,6 +77,7 @@ cask "font-hack-nerd-font"
 cask "font-hackgen-nerd"
 cask "ghostty"
 cask "goland", args: { appdir: "/Applications" }
+cask "cursor", args: { appdir: "/Applications" }
 cask "google-chrome", args: { appdir: "/Applications" }
 cask "google-drive", args: { appdir: "/Applications" }
 cask "hammerspoon"
@@ -84,6 +87,7 @@ cask "mactex"
 cask "miniconda"
 cask "ngrok", args: { appdir: "/Applications" }
 cask "notion", args: { appdir: "/Applications" }
+cask "orbstack", args: { appdir: "/Applications" }
 cask "pgadmin4"
 cask "postman", args: { appdir: "/Applications" }
 cask "pycharm", args: { appdir: "/Applications" }
