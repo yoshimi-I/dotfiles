@@ -6,24 +6,27 @@
     "[markdown]": {
         "files.trimTrailingWhitespace": false
     },
-    "[python]": {
-        "editor.formatOnType": true,
-        "editor.codeActionsOnSave": {
-            "source.fixAll.ruff": "explicit",
-            "source.organizeImports.ruff": "explicit"
-        },
-        "editor.insertSpaces": true,
-        "editor.tabSize": 2
-    },
     "[ruby]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2
     },
     "[typescript]": {
         "editor.insertSpaces": true,
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-        "python.analysis.extraPaths": [
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // 以下Python
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        }
+    },
+    "python.analysis.extraPaths": [
         "${workspaceFolder}",
         "${workspaceFolder}/src",
         "${workspaceFolder}/models"
@@ -35,31 +38,25 @@
     ],
     "python.envFile": "${workspaceFolder}/.env",
     "terminal.integrated.env.osx": {
-        "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/models",   
-    "FIG_NEW_SESSION": "1"
-        },
+        "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/models",
+        "FIG_NEW_SESSION": "1"
+    },
     "python.analysis.indexing": true,
     "python.analysis.autoSearchPaths": true,
     "python.analysis.useLibraryCodeForTypes": true,
     "jupyter.notebookFileRoot": "${workspaceFolder}",
-    "jupyter.formatOnSave": true,
-    "jupyter.formatProvider": "ruff",
     "[jupyter]": {
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "charliermarsh.ruff",
-        "editor.insertSpaces": true,
-        "editor.tabSize": 2
+        "editor.defaultFormatter": "charliermarsh.ruff"
     },
+
     "cSpell.userWords": [
         "chatgpt",
-        "Monokai",
-        "techtrain"
     ],
-    "editor.selectionBackground": "#74939d",
-    "editor.acceptSuggesionOnEnter": "on",
     "editor.accessibilitySupport": "off",
     "editor.copyWithSyntaxHighlighting": false,
     "editor.dragAndDrop": false,
+    "editor.fontFamily": "PlemolJP35 Console NF, monospace",
     "editor.fontSize": 12,
     "editor.inlineSuggest.enabled": true,
     "editor.snippetSuggestions": "top",
@@ -75,6 +72,26 @@
     "emmet.variables": {
         "lang": "ja"
     },
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#393087",
+        "editor.selectionBackground": "#74939d",
+        "tab.activeBackground": "#393087",
+        "tab.activeForeground": "#74939d",
+        // タブの色設定
+        "editorIndentGuide.background1": "#b22222",
+        "editorIndentGuide.background2": "#ff4500",
+        "editorIndentGuide.background3": "#ffd700",
+        "editorIndentGuide.background4": "#228b22",
+        "editorIndentGuide.background5": "#000080",
+        "editorIndentGuide.background6": "#8b008b",
+        "editorIndentGuide.activeBackground1": "#fff",
+        "editorIndentGuide.activeBackground2": "#fff",
+        "editorIndentGuide.activeBackground3": "#fff",
+        "editorIndentGuide.activeBackground4": "#fff",
+        "editorIndentGuide.activeBackground5": "#fff",
+        "editorIndentGuide.activeBackground6": "#fff"
+
+    },
     "files.associations": {
         "*.erb": "erb"
     },
@@ -87,19 +104,13 @@
         "**/.svn": true,
         "**/CVS": true
     },
-    "jupyter.experimental.debugging": true,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "python.linting.flake8Args": [
-        "--ignore=E501"
-    ],
-    "python.linting.flake8Enabled": true,
-    "techtrain-railway.optOutTelemetry": false,
     "terminal.external.osxExec": "warp.app",
     "terminal.integrated.inheritEnv": false,
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
-    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    "workbench.colorTheme": "One Monokai",
     "workbench.iconTheme": "material-icon-theme",
     "terminal.integrated.fontFamily": "AurulentSansM Nerd Font",
     "hediet.vscode-drawio.resizeImages": null,
@@ -107,7 +118,6 @@
     "notebook.lineNumbers": "on",
     "files.autoSave": "afterDelay",
     "diffEditor.ignoreTrimWhitespace": false,
-    "hediet.vscode-drawio.theme": "Kennedy",
     "editor.formatOnSave": true,
     "github.copilot.enable": {
         "*": true,
@@ -115,10 +125,22 @@
         "markdown": false,
         "scminput": false
     },
+    "go.useLanguageServer": true,
+    "go.toolsManagement.autoUpdate": true,
+    "gopls": {
+        "ui.semanticTokens": true,
+        "analyses": {
+            "unusedparams": true
+        },
+        "staticcheck": true
+    },
     "explorer.confirmDragAndDrop": false,
     "github.copilot.advanced": {},
     "remote.autoForwardPortsSource": "hybrid",
     "window.zoomLevel": 1,
+    // Cursorのアクティビティバーの向きを垂直にする
+    "workbench.activityBar.orientation": "vertical",
+    // 以下vimの設定
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "/Users/yoshimi/.vimrc",
     "vim.hlsearch": true,
@@ -134,106 +156,218 @@
     },
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["<C-k>"],
-            "after": ["g", "t"]
+            "before": [
+                "<C-k>"
+            ],
+            "after": [
+                "g",
+                "t"
+            ]
         },
         {
-            "before": ["<C-j>"],
-            "after": ["g", "T"]
+            "before": [
+                "<C-j>"
+            ],
+            "after": [
+                "g",
+                "T"
+            ]
         },
         {
-            "before": ["<C-h>"],
-            "after": ["<C-w>", "h"]
+            "before": [
+                "<C-h>"
+            ],
+            "after": [
+                "<C-w>",
+                "h"
+            ]
         },
         {
-            "before": ["<C-l>"],
-            "after": ["<C-w>", "l"]
+            "before": [
+                "<C-l>"
+            ],
+            "after": [
+                "<C-w>",
+                "l"
+            ]
         },
         {
-            "before": ["<leader>", "f", "f"],
-            "commands": ["workbench.action.quickOpen"]
+            "before": [
+                "<leader>",
+                "f",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
         },
         {
-            "before": ["<leader>", "f", "a"],
-            "commands": ["workbench.action.findInFiles"]
+            "before": [
+                "<leader>",
+                "f",
+                "a"
+            ],
+            "commands": [
+                "workbench.action.findInFiles"
+            ]
         },
         {
-            "before": ["<leader>", "h"],
-            "commands": ["workbench.action.moveActiveEditorGroupLeft"]
+            "before": [
+                "<leader>",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.moveActiveEditorGroupLeft"
+            ]
         },
         {
-            "before": ["<leader>", "l"],
-            "commands": ["workbench.action.moveActiveEditorGroupRight"]
+            "before": [
+                "<leader>",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.moveActiveEditorGroupRight"
+            ]
         },
         {
-            "before": ["g", "u"],
-            "commands": ["editor.action.goToReferences"]
+            "before": [
+                "g",
+                "u"
+            ],
+            "commands": [
+                "editor.action.goToReferences"
+            ]
         },
         {
-            "before": ["g", "s"],
-            "commands": ["editor.action.goToImplementation"]
+            "before": [
+                "g",
+                "s"
+            ],
+            "commands": [
+                "editor.action.goToImplementation"
+            ]
         },
         {
-            "before": ["g", "i"],
-            "commands": ["editor.action.goToImplementation"]
+            "before": [
+                "g",
+                "i"
+            ],
+            "commands": [
+                "editor.action.goToImplementation"
+            ]
         },
         {
-            "before": ["<C-[>"],
-            "commands": ["workbench.action.navigateBack"]
+            "before": [
+                "<C-[>"
+            ],
+            "commands": [
+                "workbench.action.navigateBack"
+            ]
         },
         {
-            "before": ["<C-]>"],
-            "commands": ["workbench.action.navigateForward"]
+            "before": [
+                "<C-]>"
+            ],
+            "commands": [
+                "workbench.action.navigateForward"
+            ]
         },
         {
-            "before": ["<leader>", "l", "s"],
+            "before": [
+                "<leader>",
+                "l",
+                "s"
+            ],
             "commands": "workbench.view.explorer"
         },
         {
-            "before": ["u"],
-            "commands": ["undo"]
+            "before": [
+                "u"
+            ],
+            "commands": [
+                "undo"
+            ]
         },
         {
-            "before": ["<leader>", "w", "q"],
-            "commands": ["workbench.action.closeActiveEditor"]
+            "before": [
+                "<leader>",
+                "w",
+                "q"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
         },
         {
-            "before": ["<C-e>"],
-            "commands": ["workbench.action.toggleSidebarVisibility"]
+            "before": [
+                "<C-e>"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
         },
         {
-            "before": ["<leader>", "n"],
-            "commands": ["workbench.action.splitEditorRight"]
+            "before": [
+                "<leader>",
+                "n"
+            ],
+            "commands": [
+                "workbench.action.splitEditorRight"
+            ]
         },
         {
-            "before": ["[", "q"],
-            "commands": ["editor.action.marker.prev"]
+            "before": [
+                "[",
+                "q"
+            ],
+            "commands": [
+                "editor.action.marker.prev"
+            ]
         },
         {
-            "before": ["]", "q"],
-            "commands": ["editor.action.marker.next"]
+            "before": [
+                "]",
+                "q"
+            ],
+            "commands": [
+                "editor.action.marker.next"
+            ]
         },
         {
-            "before": ["<leader>", "t"],
-            "commands": ["workbench.action.terminal.toggleTerminal"]
+            "before": [
+                "<leader>",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.terminal.toggleTerminal"
+            ]
         },
         {
-            "before": ["<C-e>"],
-            "commands": ["workbench.action.focusActiveEditorGroup"]
+            "before": [
+                "<C-e>"
+            ],
+            "commands": [
+                "workbench.action.focusActiveEditorGroup"
+            ]
         }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         {
-            "before": ["<C-g>"],
-            "commands": ["editor.action.addSelectionToNextFindMatch"]
+            "before": [
+                "<C-g>"
+            ],
+            "commands": [
+                "editor.action.addSelectionToNextFindMatch"
+            ]
         },
         {
-            "before": ["<leader>", "g"],
-            "commands": ["editor.action.selectHighlights"]
-        },
-        {
-            "before": ["<S-Escape>"],
-            "commands": ["workbench.action.toggleSidebarVisibility"]
+            "before": [
+                "<leader>",
+                "g"
+            ],
+            "commands": [
+                "editor.action.selectHighlights"
+            ]
         }
     ],
     "cursor.cpp.disabledLanguages": [
