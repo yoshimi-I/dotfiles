@@ -6,10 +6,6 @@
     "[markdown]": {
         "files.trimTrailingWhitespace": false
     },
-    "[ruby]": {
-        "editor.insertSpaces": true,
-        "editor.tabSize": 2
-    },
     "[typescript]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2,
@@ -48,6 +44,21 @@
     "[jupyter]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+
+    // 以下Go
+    "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true
+    },
+    "go.useLanguageServer": true,
+    "go.toolsManagement.autoUpdate": true,
+    "gopls": {
+        "ui.semanticTokens": true,
+        "analyses": {
+            "unusedparams": true,
+        },
+        "staticcheck": true
     },
 
     "cSpell.userWords": [
@@ -125,15 +136,6 @@
         "markdown": false,
         "scminput": false
     },
-    "go.useLanguageServer": true,
-    "go.toolsManagement.autoUpdate": true,
-    "gopls": {
-        "ui.semanticTokens": true,
-        "analyses": {
-            "unusedparams": true
-        },
-        "staticcheck": true
-    },
     "explorer.confirmDragAndDrop": false,
     "github.copilot.advanced": {},
     "remote.autoForwardPortsSource": "hybrid",
@@ -147,6 +149,7 @@
     "vim.incsearch": true,
     "vim.ignorecase": true,
     "vim.smartcase": true,
+   "vim.useCtrlKeys": true,
     "vim.useSystemClipboard": true,
     "vim.leader": " ",
     "vim.handleKeys": {
@@ -155,6 +158,24 @@
         "<C-x>": false
     },
     "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "j"
+            ],
+            "commands": [
+               "workbench.action.moveEditorToPreviousGroup"
+            ]
+          },
+          {
+            "before": [
+                "<leader>",
+                "k"
+            ],
+            "commands": [
+              "workbench.action.moveEditorToNextGroup"
+            ]
+          },
         {
             "before": [
                 "<C-k>"
