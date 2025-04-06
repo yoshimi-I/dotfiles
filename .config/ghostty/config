@@ -1,13 +1,47 @@
-font-family = "JetBrains Mono"
+font-size = 16
+
+# リガチャを無効
+font-feature = -calk
+font-feature = -light
+font-feature = -dlig
+
+theme = Ayu Mirage
+
+# カーソルの見た目
+cursor-style = block
+
+clipboard-paste-protection = true
+
+cursor-click-to-move = true
+mouse-scroll-multiplier = 3
+
+background-opacity = 0.75
+unfocused-split-opacity = 0.55
+unfocused-split-fill = 000000
+split-divider-color = a9a9a9
+
+window-padding-x = 5
+window-padding-y = 5
+window-padding-balance = true
+window-inherit-working-directory = false
+window-colorspace = display-p3
+
+# ソフト起動時にウィンドウを表示しない
+initial-window = false
+
+# バーを表示しない
 macos-titlebar-style = hidden
-macos-non-native-fullscreen = true
 
-quick-terminal-position = "top"
+# カーソルの見た目を変更する
+shell-integration-features = sudo,title,no-cursor
 
-quick-terminal-screen = "mouse"
+macos-option-as-alt = true
 
-quick-terminal-animation-duration = 0
+keybind = alt+left=unbind
+keybind = alt+right=unbind
 
-window-decoration = false
+# クイックターミナル
+quick-terminal-position = top
+quick-terminal-screen = main
 
-keybind = global:shift+enter=toggle_quick_terminal
+keybind = global:ctrl+enter=toggle_quick_terminal
