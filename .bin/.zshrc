@@ -81,7 +81,13 @@ path=(
   /Library/Apple/usr/bin
 )
 
+# starshipの設定
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+FPATH=/opt/homebrew/share/zsh-completions:$FPATH
+FPATH=/opt/homebrew/share/zsh/site-functions:$FPATH
 eval "$(starship init zsh)"
+
 eval "$(direnv hook zsh)"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
