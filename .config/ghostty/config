@@ -1,47 +1,40 @@
 font-size = 16
-
-# リガチャを無効
-font-feature = -calk
-font-feature = -light
+# リガチャを無効化
+font-feature = -calt
+font-feature = -liga
 font-feature = -dlig
-
 theme = Ayu Mirage
-
 # カーソルの見た目
 cursor-style = block
-
 clipboard-paste-protection = true
-
 cursor-click-to-move = true
 mouse-scroll-multiplier = 3
-
 background-opacity = 0.75
 unfocused-split-opacity = 0.55
 unfocused-split-fill = 000000
 split-divider-color = a9a9a9
-
+# シェルが終了した後にウィンドウを閉じない
+wait-after-command = true
 window-padding-x = 5
 window-padding-y = 5
 window-padding-balance = true
 window-inherit-working-directory = false
 window-colorspace = display-p3
-
 # ソフト起動時にウィンドウを表示しない
 initial-window = false
-
 # バーを表示しない
 macos-titlebar-style = hidden
-
-# カーソルの見た目を変更する
+# カーソルの見た目を変更するため "no-cursor"
 shell-integration-features = sudo,title,no-cursor
-
 macos-option-as-alt = true
-
+macos-non-native-fullscreen =  true
 keybind = alt+left=unbind
 keybind = alt+right=unbind
-
 # クイックターミナル
-quick-terminal-position = top
-quick-terminal-screen = main
-
+quick-terminal-position = "bottom"
+quick-terminal-screen = "mouse"
+window-decoration = false
+macos-titlebar-style = hidden
+focus-follows-mouse = true
+fullscreen = true
 keybind = global:ctrl+enter=toggle_quick_terminal

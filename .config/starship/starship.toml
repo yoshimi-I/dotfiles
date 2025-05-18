@@ -29,6 +29,7 @@ $cmd_duration
 $lua
 $rust
 $time
+$$all$custom.gituser
 """
 
 [os]
@@ -66,7 +67,7 @@ behind = '⇣${count}'
 diverged = '⇕'
 up_to_date = '✓'
 untracked = '?'
-stashed = '$'
+stashed = '\$'   
 modified = '!${count}'
 renamed = '»'
 deleted = '✘'
@@ -122,3 +123,10 @@ style = 'fg:#73daca'
 format = '[   $time]($style)' # nf-pl-right_soft_divider, nf-fa-clock_o
 time_format = '%T'
 utc_time_offset = '+9'
+
+[custom.gituser]
+description = "Git user name"
+command = "git config user.name"
+style = 'bold yellow'
+format = 'edit by [$symbol($output )]($style)'
+when = "git rev-parse --is-inside-work-tree >/dev/null 2>&1"
